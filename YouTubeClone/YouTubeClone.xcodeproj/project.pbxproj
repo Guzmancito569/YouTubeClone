@@ -11,6 +11,10 @@
 		4511653B29C2E5CC005FBAE3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511653A29C2E5CC005FBAE3 /* NetworkError.swift */; };
 		4511653D29C2E718005FBAE3 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511653C29C2E718005FBAE3 /* RequestModel.swift */; };
 		4511654029C2E95F005FBAE3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511653F29C2E95F005FBAE3 /* Constants.swift */; };
+		4511654629C2EEFC005FBAE3 /* HomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511654529C2EEFC005FBAE3 /* HomeProvider.swift */; };
+		4511654829C2F247005FBAE3 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511654729C2F247005FBAE3 /* HomePresenter.swift */; };
+		4511654A29C2F2D5005FBAE3 /* PlaylistItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511654929C2F2D5005FBAE3 /* PlaylistItemsModel.swift */; };
+		4511654C29C2F3AD005FBAE3 /* ChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511654B29C2F3AD005FBAE3 /* ChannelModel.swift */; };
 		4563FCAC29BC244E0010E112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563FCAB29BC244E0010E112 /* AppDelegate.swift */; };
 		4563FCAE29BC244E0010E112 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563FCAD29BC244E0010E112 /* SceneDelegate.swift */; };
 		4563FCB029BC244E0010E112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563FCAF29BC244E0010E112 /* ViewController.swift */; };
@@ -38,6 +42,10 @@
 		4511653A29C2E5CC005FBAE3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		4511653C29C2E718005FBAE3 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
 		4511653F29C2E95F005FBAE3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4511654529C2EEFC005FBAE3 /* HomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProvider.swift; sourceTree = "<group>"; };
+		4511654729C2F247005FBAE3 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		4511654929C2F2D5005FBAE3 /* PlaylistItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistItemsModel.swift; sourceTree = "<group>"; };
+		4511654B29C2F3AD005FBAE3 /* ChannelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelModel.swift; sourceTree = "<group>"; };
 		4563FCA829BC244E0010E112 /* YouTubeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4563FCAB29BC244E0010E112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4563FCAD29BC244E0010E112 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +99,39 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
+		4511654129C2EE8A005FBAE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4511654429C2EED3005FBAE3 /* Provider */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4511654229C2EE9E005FBAE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4563FCCE29BECC6A0010E112 /* HomeViewController.swift */,
+				4563FCCF29BECC6A0010E112 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4511654329C2EEA7005FBAE3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4511654729C2F247005FBAE3 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4511654429C2EED3005FBAE3 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				4511654529C2EEFC005FBAE3 /* HomeProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
 		4563FC9F29BC244E0010E112 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +176,8 @@
 			children = (
 				4563FCC029BEAE4B0010E112 /* PlaylistModel.swift */,
 				4563FCC229BEC6410010E112 /* VideoModel.swift */,
+				4511654929C2F2D5005FBAE3 /* PlaylistItemsModel.swift */,
+				4511654B29C2F3AD005FBAE3 /* ChannelModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,8 +194,9 @@
 		4563FCC929BECBF80010E112 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4563FCCE29BECC6A0010E112 /* HomeViewController.swift */,
-				4563FCCF29BECC6A0010E112 /* HomeViewController.xib */,
+				4511654329C2EEA7005FBAE3 /* Presenter */,
+				4511654229C2EE9E005FBAE3 /* View */,
+				4511654129C2EE8A005FBAE3 /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -271,10 +315,12 @@
 			files = (
 				4563FCD829BECD7D0010E112 /* PlaylistsViewController.swift in Sources */,
 				4511653B29C2E5CC005FBAE3 /* NetworkError.swift in Sources */,
+				4511654A29C2F2D5005FBAE3 /* PlaylistItemsModel.swift in Sources */,
 				4563FCD429BECD580010E112 /* VideosViewController.swift in Sources */,
 				4563FCC829BECA1D0010E112 /* MainViewController.swift in Sources */,
 				4563FCB029BC244E0010E112 /* ViewController.swift in Sources */,
 				4511653D29C2E718005FBAE3 /* RequestModel.swift in Sources */,
+				4511654C29C2F3AD005FBAE3 /* ChannelModel.swift in Sources */,
 				4511653929C2E334005FBAE3 /* ServiceLayer.swift in Sources */,
 				4511654029C2E95F005FBAE3 /* Constants.swift in Sources */,
 				4563FCC129BEAE4B0010E112 /* PlaylistModel.swift in Sources */,
@@ -283,6 +329,8 @@
 				4563FCAC29BC244E0010E112 /* AppDelegate.swift in Sources */,
 				4563FCDC29BECD970010E112 /* ChannelViewController.swift in Sources */,
 				4563FCC629BEC9FE0010E112 /* RootPageViewController.swift in Sources */,
+				4511654629C2EEFC005FBAE3 /* HomeProvider.swift in Sources */,
+				4511654829C2F247005FBAE3 /* HomePresenter.swift in Sources */,
 				4563FCC329BEC6410010E112 /* VideoModel.swift in Sources */,
 				4563FCAE29BC244E0010E112 /* SceneDelegate.swift in Sources */,
 			);
