@@ -24,6 +24,7 @@ struct RequestModel {
     
     enum Endpoint: String {
         case empty = ""
+        case search = "/search"
     }
     
     enum URLBase: String {
