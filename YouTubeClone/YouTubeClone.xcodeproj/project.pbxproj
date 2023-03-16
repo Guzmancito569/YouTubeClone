@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4511653929C2E334005FBAE3 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511653829C2E334005FBAE3 /* ServiceLayer.swift */; };
+		4511653B29C2E5CC005FBAE3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511653A29C2E5CC005FBAE3 /* NetworkError.swift */; };
+		4511653D29C2E718005FBAE3 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511653C29C2E718005FBAE3 /* RequestModel.swift */; };
+		4511654029C2E95F005FBAE3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511653F29C2E95F005FBAE3 /* Constants.swift */; };
 		4563FCAC29BC244E0010E112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563FCAB29BC244E0010E112 /* AppDelegate.swift */; };
 		4563FCAE29BC244E0010E112 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563FCAD29BC244E0010E112 /* SceneDelegate.swift */; };
 		4563FCB029BC244E0010E112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4563FCAF29BC244E0010E112 /* ViewController.swift */; };
@@ -30,6 +34,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4511653829C2E334005FBAE3 /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		4511653A29C2E5CC005FBAE3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		4511653C29C2E718005FBAE3 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		4511653F29C2E95F005FBAE3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4563FCA829BC244E0010E112 /* YouTubeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4563FCAB29BC244E0010E112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4563FCAD29BC244E0010E112 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +73,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4511653729C2E2F3005FBAE3 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4511653829C2E334005FBAE3 /* ServiceLayer.swift */,
+				4511653C29C2E718005FBAE3 /* RequestModel.swift */,
+				4511653A29C2E5CC005FBAE3 /* NetworkError.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		4511653E29C2E943005FBAE3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				4511653F29C2E95F005FBAE3 /* Constants.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		4563FC9F29BC244E0010E112 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +110,8 @@
 		4563FCAA29BC244E0010E112 /* YouTubeClone */ = {
 			isa = PBXGroup;
 			children = (
+				4511653E29C2E943005FBAE3 /* utils */,
+				4511653729C2E2F3005FBAE3 /* ServiceLayer */,
 				4563FCCD29BECC2F0010E112 /* About */,
 				4563FCCC29BECC230010E112 /* Channels */,
 				4563FCCB29BECC0E0010E112 /* Playlists */,
@@ -242,9 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4563FCD829BECD7D0010E112 /* PlaylistsViewController.swift in Sources */,
+				4511653B29C2E5CC005FBAE3 /* NetworkError.swift in Sources */,
 				4563FCD429BECD580010E112 /* VideosViewController.swift in Sources */,
 				4563FCC829BECA1D0010E112 /* MainViewController.swift in Sources */,
 				4563FCB029BC244E0010E112 /* ViewController.swift in Sources */,
+				4511653D29C2E718005FBAE3 /* RequestModel.swift in Sources */,
+				4511653929C2E334005FBAE3 /* ServiceLayer.swift in Sources */,
+				4511654029C2E95F005FBAE3 /* Constants.swift in Sources */,
 				4563FCC129BEAE4B0010E112 /* PlaylistModel.swift in Sources */,
 				4563FCD029BECC6A0010E112 /* HomeViewController.swift in Sources */,
 				4563FCE029BECDB60010E112 /* AboutViewController.swift in Sources */,
